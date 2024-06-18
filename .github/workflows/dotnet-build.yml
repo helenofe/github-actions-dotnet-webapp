@@ -1,17 +1,17 @@
 name: Workflow teste
 
-on:
-  push:
-    branches:
+ on:
+   push:
+     branches:
     
-  schedule:
-    - cron: '0 * * * *'  
-   jobs:
-     build:
-       runs-on: ubuntu-latest
-     steps:
-      - name: 
-         uses: actions/checkout@v2
+   schedule:
+     - cron: '0 * * * *'  
+    jobs:
+      build:
+         runs-on: ubuntu-latest
+       steps:
+        - name: 
+          uses: actions/checkout@v2
 
-      - name: Build
-        run: echo "Workflow concluído com sucesso!"
+     - name: Build
+     run: echo "Workflow concluído com sucesso!"

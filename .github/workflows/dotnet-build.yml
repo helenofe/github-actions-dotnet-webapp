@@ -1,6 +1,6 @@
 name: Workflow teste
 
- on:
+on:
    push:
      branches:
     

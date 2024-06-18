@@ -6,13 +6,12 @@ on:
     
   schedule:
     - cron: '0 * * * *'  
-
-steps:
-   - name: 
-      uses: actions/checkout@v2
   jobs:
     build:
       runs-on: ubuntu-latest
+  steps:
+    - name: 
+       uses: actions/checkout@v2
 
       - name: Build
         run: echo "Workflow concluído com sucesso!"
